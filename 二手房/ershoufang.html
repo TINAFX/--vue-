@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/二手房.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top clearfix">
+		<div class="top-left">
+			<a href="#"></a>
+			<span class="swith-city">
+				<em>北京</em>
+				<i></i>
+			</span>
+		</div>
+		<div class="top-middle"></div>
+		<div class="top-right"></div>
+	</div>
+	<div class="bg clearfix">
+		<div class="search-box">
+			<i class="btn"></i>
+			<input type="text" placeholder="请输入小区或商圈名~">
+		</div>
+		<div class="swiper-container">
+			 <div class="swiper-wrapper">
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="look clearfix">
+		<div class="house">
+			<ul>
+				<li>
+					<img src="./img/ll.png" alt="">
+					<p>智能找房</p>
+				</li>
+				<li>
+					<img src="./img/ll.png" alt="">
+					<p>换房地图</p>
+				</li>
+				<li>
+					<img src="./img/ll.png" alt="">
+					<p>全部房源</p>
+				</li>
+			</ul>
+		</div>
+		<div class="mod-box">
+			<h2 class="mod-title">为您推荐</h2>
+			<ul class="clearfix">
+				<li>
+					<img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+					<div class="mod-tip">
+						<h3>适合小两口的生活之家</h3>
+						<p>500万内帮您安家北京</p>
+					</div>
+				</li>
+				<li>
+					<img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+					<div class="mod-tip">
+						<h3>适合小两口的生活之家</h3>
+						<p>500万内帮您安家北京</p>
+					</div>
+				</li>
+				<li>
+					<img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+					<div class="mod-tip">
+						<h3>适合小两口的生活之家</h3>
+						<p>500万内帮您安家北京</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="house-list">
+		<div class="type clearfix">
+			<ul>
+				<li @click="area">
+					<a href="javaScript:void(0)" :class="selectarea ? 'green':'gray'" ref="tip">区域</a>
+					<i></i>
+				</li>
+				<li @click="price">
+					<a href="javaScript:void(0)" >价格</a>
+					<i></i>
+
+				</li>
+				<li @click="housetype">
+					<a href="javaScript:void(0)" ref="mod" :class="selecthousetype ? 'green':'gray'">房型</a>
+					<i></i>
+				</li>
+				<li @click="more">
+					<a href="javaScript:void(0)" :class="selectmore ? 'green':'gray'">更多</a>
+					<i></i>
+				</li>
+			</ul>
+		</div>
+		<div class="tab" :class="isshow ? 'show':'hide'">
+		    <ul class="clearfix">
+				<li @click="area" >
+					<a href="javaScript:void(0)" :class="bgselectarea ? 'green':'gray'" ref="tips">区域</a>
+					<i></i>
+				</li>
+				<li @click="price">
+					<a href="javaScript:void(0)" :class="bgselectprice ? 'green':'gray'">价格</a>
+					<i></i>
+
+				</li>
+				<li @click="housetype">
+					<a href="javaScript:void(0)" :class="bgselecthousetype ? 'green':'gray'" ref="mods">房型</a>
+					<i></i>
+				</li>
+				<li @click="more">
+					<a href="javaScript:void(0)" :class="bgselectmore ? 'green':'gray'">更多</a>
+					<i></i>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tabtype clearfix" :class="isshowarea ? 'show':'hide'">
+				    <div class="nav" :class="position ? 'left' : ''">
+				    	<ul>
+							<li @click="navEara"   :class="bg1 ? 'white':'grey'">区域</li>
+							<li @click="navSubway" :class="bg2 ? 'white':'grey'">地铁</li>
+					    </ul>
+				    </div>
+				    <div class="nav-list" :class="showarea ?'show':'hide'">
+				    	<ul >
+				    		<li v-for="item in region" :class="item.isselect ? 'green' :'white'"  @click="city(item)">{{item.name}}
+				    		     <ul class="citylist" :class="item.cityshow ?'show':'hide'"  >
+				    		     	<li v-for="ctem in item.region2" :class="ctem.isselected ? 'green' :'black'" @click="clickItem(ctem)">{{ctem.name}}</li>
+				    		     </ul>
+				    		</li>
+				    	</ul>
+				    </div>
+				    <div class="nav-list" :class="showSubway ?'show':'hide'">
+				    	<ul>
+				    		<li>不限</li>
+				    		<li>haha</li>
+				    		<li>不限</li>
+				    		<li>不限</li>
+				    		<li>不限</li>
+				    	</ul>
+				    </div>
+				</div>
+				<div class="tabtype" :class="isshowprice ? 'show':'hide'">
+					<ul class="navprice">
+						<li>区</li>
+						<li>地铁</li>
+						<li>
+							<span>自定义价格</span>
+							<span class="max">最大</span>
+							<span>-</span>
+							<span class="min">最小</span>
+							<span class="btn">确定</span>
+						</li>
+					</ul>
+				</div>
+				<div class="tabtype" :class="isshowhousetype ? 'show':'hide'">
+					<ul class="navtype">
+						<li v-for="item in house_type" :class="item.isselect ? 'green' :'white'"><span >{{item.name}}</span><input  type="checkbox" :class="item.isselect ? 'green' :'white'" @click="check(item)"></li>
+						
+					</ul>
+					<p class="yes green-btn" @click="yes">确定</p>
+				</div>
+				<div class="tabtype" :class="isshowmore ? 'show':'hide'">
+					<ul class="navmore">
+						<li>
+							<h2>朝向</h2>
+							<span v-for="item in orientation" :class="item.isselect ? 'green' :'white'" @click="clickItem(item)">{{item.name}}</span>
+						</li>
+						<!-- <li>
+							<h2>朝向</h2>
+							<span>朝东</span>
+							<span>朝东</span>
+						</li> -->
+						<li>
+							<h2>标签</h2>
+							<span v-for="item in tablist" :class="item.isselect ? 'green' :'white'" @click="clickItem(item)">{{item.name}}</span>
+						</li>
+						<div class="navyes">
+							<p class="clear" @click="clearall">清空条件</p>
+							<p class="yes"  @click="yes">确定</p>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="list clearfix">
+			<ul>
+				<li v-for="item in house_lists">
+				<a :href="'ershouxiangqing.html ?id='+item.id">
+				    <div class="list-img">
+					   <img src="./img/rsp_pic_upload70a93031-3527-49b2-8d8f-b65d6b82149e.jpg.210x164.jpg" alt="">
+					   <span>优选</span>
+					   <p>房主自荐</p>
+					</div>
+					<div class="list-info">
+						<h2 class="info-title">{{item.title}}</h2>
+						<p class="eara">{{item.type}}/{{item.area}}/{{item.orientation}}/{{item.xiaoqu}}</p>
+						<p class="care">
+							<span class="price">639万</span>
+							<span class="size">111909元/平</span>
+						</p>
+						<p class="tip">
+							<span class="subway" v-for="n in item.tab">{{n}}</span>
+							<!-- <span class="year">满五年</span>
+							<span class="look-house">随时看房</span> -->
+						</p>
+
+					</div>
+				</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="./js/二手房.js"></script>
+</body>
+</html>

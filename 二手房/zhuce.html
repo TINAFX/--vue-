@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+		  <script src="./js/vue.js"></script>
+	      <script src="./js/jquery-3.2.0.min.js"></script>
+	<title>Document</title>
+	<style>
+	   body,html {
+	   	font-size: 62.5%;
+	   }
+	   html,body,h2,p{
+	   	margin: 0;
+	   	padding: 0;
+	   }
+	   #app{
+	   	padding:  0 2rem;
+	   }
+	   h2 {
+	   	font-size: 2rem;
+	   	font-weight: normal;
+	   	text-align: center;
+	  /* 	margin-bottom: 2rem;*/
+	   }
+	   input{
+	   	outline: none;
+	   	display: block;
+	   	width: 100%;
+	   	line-height: 3rem;
+	   }
+	   .phone {
+	   	margin-top: 9rem;
+	   }
+	   .pass{
+	   	margin-top: 4rem;
+	   }
+	   button {
+	   	background: #66cea3;
+        margin-top: 2rem;
+	   	width: 100%;
+	   	outline: none;
+	   	color: #fff;
+	   	border-style: none;
+	   	line-height: 4rem;
+	   }
+	   .name{
+	   	margin-top: 5rem;
+	   }
+	</style>
+</head>
+<body>
+	<div id="app">
+		<h2>账号注册</h2>
+		<input  v-model="phone" type="text" placeholder="请输入账号" class="phone">
+		<input  v-model="password" type="text" placeholder="输入密码" class="pass">
+		<input  v-model="name" type="text" placeholder="请输入用户名" class="name">
+		<button @click="register">注册</button>
+	</div>
+	 <script>
+	  var v=new Vue({
+	  	el:'#app',
+	  	data:{
+            name:"",
+	  		phone:"",
+	  		password:"",
+	  	},
+	  	methods:{
+           register:function(){
+           	 if(this.name==""){
+           	 	alert("用户名不能为空")
+           	 };
+           	 if(this.phone==""){
+           	 	alert("手机号不能为空")
+
+           	 }
+           	 if(this.password==""){
+           	 	alert("密码补鞥为空")
+           	 }
+           	 $.ajax({
+           	 	url:"",
+           	 	dataType:"",
+           	 	type:"",
+           	 	data:{},
+           	 	success:function(res){},
+           	 })
+           }
+	  	}
+
+	  })
+	 </script>
+</body>
+</html>

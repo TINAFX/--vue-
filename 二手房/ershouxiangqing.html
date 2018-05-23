@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+	<title>二手详情</title>
+	<link rel="stylesheet" href="./css/二手房详情.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+	<script src="./js/vue.js"></script>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QPMbEmezEMHWHOaGHCK7I7754klgnF32"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="top clearfix">
+			<div class="top-left">
+				<a href="#"></a>
+				<span class="swith-city">
+					<em>北京</em>
+					<i></i>
+				</span>
+			</div>
+			<div class="top-middle"></div>
+			<div class="top-right"></div>
+		</div>
+		<div class="swiper-container">
+			 <div class="swiper-wrapper">
+				 <div class="swiper-slide">
+				    <div class="fix"></div>
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				    <div class="fix"></div>
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+				 <div class="swiper-slide">
+				    <div class="fix"></div>
+				 	<img src="./img/head_bg.jpg" alt="">
+				 </div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+		</div>
+		<div class="content">
+			<div class="title">
+				<h2>
+	            {{house_info.title}}      
+	            </h2>
+			</div>
+			<div class="type clearfix">
+				<ul>
+					<li>
+						<p class="type-title">售价</p>
+						<p class="price">420万元</p>
+					</li>
+					<li>
+						<p class="type-title">售价</p>
+						<p class="price">420万元</p>
+					</li>
+					<li>
+						<p class="type-title">售价</p>
+						<p class="price">420万元</p>
+					</li>
+				</ul>
+			</div>
+			<div class="good clearfix">
+			   <div class="good-content">
+				   	<h2>链家优选</h2>
+					<p>意味着更高的竞争力和关注度<a href="">了解更多</a></p>
+			   </div>
+			   <div class="icon">
+			   	   <img src="./img/icon_youxuan.png" alt="">
+			   </div>	
+			</div>
+			<div class="agent clearfix">
+			  <div class="agent-img">
+			  	<img src="./img/logo300x300.png" alt="">
+			  </div>
+				<p>打开链家APP ，在线咨询经纪人</p>
+			</div>
+			<div class="info">
+				<div class="info-tip">
+					<span class="subway">地铁</span>
+					<span class="year">满五年</span>
+					<span class="ele">有电梯</span>
+				</div>
+				<div class="info-content">
+					<ul>
+						<li class="short">
+							<span>单价:</span>
+							46,933元/平
+						</li>
+						<li class="short">
+							<span>挂牌:</span>
+							2018.03.31
+						</li>
+						<li class="short">
+							<span>朝向:</span>
+							南北
+						</li>
+						<li class="short">
+							<span>楼层:</span>
+							高楼层/21
+						</li>
+						<li class="short">
+							<span>楼型:</span>
+							板塔结合
+						</li>
+						<li class="short">
+							<span>电梯:</span>
+							有电梯
+						</li>
+						<li class="short">
+							<span>装修:</span>
+							精装
+						</li>
+						<li class="short">
+							<span>年代:</span>
+							2009年
+						</li>
+						<li class="short">
+							<span>用途:</span>
+							普通住宅
+						</li>
+						<li class="short">
+							<span>权属:</span>
+							限价商品房
+						</li>
+						<li class="long">
+							<span>首付预算:</span>
+							首付及贷款情况请咨询经纪人
+						</li>
+						<li class="long-row">
+							<span>小区:</span>
+							<a href="">{{house_info.xiaoqu}}</a>
+						</li>
+						
+
+					</ul>
+				</div>
+			</div>
+			<div class="item-list clearfix">
+				<h2>户型分间</h2>
+				<div class="list ">
+					<ul>
+						<li>客厅: 25.01㎡/ 北/ 普通窗</li>
+						<li>卧室A: 12.61㎡/ 南/ 普通窗</li>
+						<li>卧室B: 12.02㎡/ 北/ 普通窗</li>
+					</ul>
+				</div>
+				<div class="item-img">
+					<img src="./img/7da22614-b275-46d3-b91b-c544c3695527.png.750x.jpg" alt="">
+				</div>
+			</div>
+			<div class="more">
+				<a href="">更多房源信息</a>
+			</div>
+			<div class="allmap">
+				<img src="./img/staticimage.png" alt="">
+				<div class="marker">
+				    <div class="marker-tip"></div>
+				    <div class="marker-desc">
+				    	<p class="map">昌平区，西三旗</p>
+						<p class="small">
+	                                    距离地铁8号线700米
+	                    </p>
+				    </div>
+					
+				</div>
+			</div>
+			<div class="sub">
+				<h2>房源介绍</h2>
+				<p>
+                                            南北通透，主卧朝南带阳台，楼层高视野好厨房次卧客厅朝北，各个功能间都比较大                                            2009年由住总开发商建成小区，物业是北宇物业。楼栋均带电梯，楼栋间超大楼间距，约为90米。小区分为三个院，每个院均有两到三个大花园，适合居住。                                            小区北门距地铁霍营站G4出口75米，霍营站是13号线和8号线的换乘站，小区东侧为606公交始发站，为您的出行提供了更多的选择；小区南侧联通黑泉路，可通过黑泉路直接上北五环，横跨东西的是建材城路，通过建材城路向西可上京藏高速（此数据来源于高德地图）                                            此房为满五年业主在京*，南北通透，直观奥体                                    </p>
+			</div>
+			<div class="sub">
+				<h2>房主自荐</h2>
+				<p>
+                            房子是2009年买的，当时摇号靠前，精挑细选选到的南北通透好户型，打开窗户，通风效果极好。该房子构造为整个小区最南面第一排中间户型，两梯四户，高峰期也基本不用等电梯。楼层好，南边为五层的枫丹丽舍洋房小区，无遮挡，视野开阔，向南可以远观鸟巢，水立方，钉子塔等奥林匹克公园景观；向北后面是小区中心花园，花园里绿树成荫，健身器材，儿童滑梯等设施齐全。再往北是两层的幼儿园，没有遮挡，因此楼间距可以达到200米。房子一直自住，装修保持较好，简单收拾一下即可满足居住需求，现因距离上班地点太远且无法满足三代居住，急需出售，忍痛割爱来置换三居。两间大卧室可以轻松放置1.8米的双人床。这里居住舒适安静，非常有家的感觉。有一个租用的固定车位，一年1600元，可以解决停车难的问题。房子装修时因没有铲除开发商的腻子，直接刷了乳胶漆，造成顶部墙皮脱落，可以通过装修时吊顶刷漆解决。                            小区交通便利，为606公交站始发站，建材城西路上有快速公交车315，进城走八达岭高速，5站地即可抵达北三环。小区北面为霍营地铁站，有8号线和13号线。还有郊游专列长城号小火车可以去八达岭长城。因房子位置在最南边，相比最北面的高楼，极其安静。楼下有华联超市，不远就有幸福超市，物美超市，美廉美超市，永辉超市，楼下还有各种生活商店，饭店，小吃等。小区西边有北京国际温泉酒店，可以泡温泉，游泳，体育场等。小区内有幼儿园配套。                        >                                  </p>
+                 <div class="sub-img">
+                 	 <img src="./img/rsp_pic_upload70a93031-3527-49b2-8d8f-b65d6b82149e.jpg.210x164.jpg" alt="">
+                 </div> 
+			</div>
+			<div class=" agent-con">
+				<div class="clearfix">
+					<div class="agent-title">
+				    	<h2>经纪人反馈</h2>
+				    	<p class="data">最新带看:2018.05.01</p>
+				    </div>
+					<div class="agent-img clearfix">
+						<img src="./img/f.jpg" alt="">
+					</div>
+				</div>
+				<div class="agent-comm">
+					 <p>
+                    我实地看过房子，房子户型很好，南北通透，目前房子(一家人自己住)，装修保持的很好，房子是最南面一排的，临南街（不是主路），电梯高楼层，视野非常好。我和业主电话探讨过房子的具体情况，比较熟悉此房的售房原因和业主的目前心理动态，有什么问题可以随时联系。希望得到您的认可。                </p>
+				</div>
+               
+			</div>
+		</div>
+		<div class="house-record">
+			<h2>房源动态</h2>
+			<div class="mod clearfix">
+				<ul>
+					<li>
+						<p class="time">近7日带看(次)</p>
+						<p class="many">22</p>
+					</li>
+					<li >
+						<p class="time">30日带看(次)</p>
+						<p class="many">57</p>
+					</li>
+					<li>
+						<p class="time">关注(人)</p>
+						<p class="many">57</p>
+					</li>
+				</ul>
+			</div>
+			<div class="app-title">
+				<p class="mod-tit">使用APP查看详细带看记录和更多动态信息</p>
+				<p class="modapp">打开链家APP</p>
+			</div>
+		</div>
+		<div class="name clearfix">
+			<h2>旗胜家园</h2>
+			<div class="name-info clearfix">
+				<div class="avar">
+					<p class="name-price">参考均价:<span>45,077元/平</span></p>
+					<p>建筑年代：2009年建</p>
+					<p>漏洞总数：18栋</p>
+					<p>房屋总数:4634户</p>
+				</div>
+				<div class="name-img">
+					<img src="./img/rsp_pic_upload70a93031-3527-49b2-8d8f-b65d6b82149e.jpg.210x164.jpg" alt="">
+				</div>
+			</div>
+			<div class="success">
+				<h3>同小区成交</h3>
+				<p class="success-tit">
+					3室一厅/90.14m/东南 北
+				</p>
+				<p>近3天内成交，打开APP查看成交价</p>
+			</div>
+			<div class="same ">
+				<div class="same-title clearfix">
+					<h3>同小区房源</h3>
+					<ul>
+						<li @click="buy" :class="isselected ?'green':''">在售</li>
+						<li @click="rent" :class="selected ?'green':''">再租</li>
+					</ul>
+				</div>
+				<div class="same-img" :class="isshow ? 'show':'hide'">
+					<ul>
+						<li>
+						   <div class="same-desc">
+						   	 <img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+						   </div>
+							
+							<p class="squar">2室1厅/88.72㎡/南</p>
+							<p class="same-p">
+								<span class="same-pr">420万元</span>
+								<span class="same-sq">47,340元/平</span>
+							</p><p></p>
+							<p></p>
+						</li>
+						<li>
+						   <div class="same-desc">
+						   	 <img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+						   </div>
+							
+							<p class="squar">2室1厅/88.72㎡/南</p>
+							<p class="same-p">
+								<span class="same-pr">420万元</span>
+								<span class="same-sq">47,340元/平</span>
+							</p><p></p>
+							<p></p>
+						</li>
+					</ul>
+				</div>
+				<div class="same-img" :class="isshowrent ? 'show':'hide'">
+					<ul>
+						<li>
+						   <div class="same-desc">
+						   	 <img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+						   </div>
+							
+							<p class="squar">2室1厅/8</p>
+							<p class="same-p">
+								<span class="same-pr">420万元</span>
+								<span class="same-sq">47,340元/平</span>
+							</p><p></p>
+							<p></p>
+						</li>
+						<li>
+						   <div class="same-desc">
+						   	 <img src="./img/phpmVucxY.jpeg.500x280.jpg" alt="">
+						   </div>
+							
+							<p class="squar">2室1厅/88.72㎡/南</p>
+							<p class="same-p">
+								<span class="same-pr">420万元</span>
+								<span class="same-sq">47,340元/平</span>
+							</p><p></p>
+							<p></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="more">
+				<a href="">更多房源信息</a>
+			</div>
+		</div>
+		<div class="border">
+			<h2></h2>
+		</div>
+	</div>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+	<script src="./js/二手房详情.js"></script>
+</body>
+</html>

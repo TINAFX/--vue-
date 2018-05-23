@@ -1,0 +1,511 @@
+body,html,h2,ul,li,p,img,span,em ,h3{
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	font-size: 62.5%;
+}
+body {
+	background:#f5f5f5;
+}
+.clearfix::after{
+	clear: both;
+	display: block;
+	content: "";
+	height:0;
+}
+ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.top {
+	background: #fff;
+	padding: 1rem;
+}
+.top-left {
+	float: left;
+}
+.top-left a {
+	background: url("../img/hhe.png");
+	width: 3rem;
+	height: 2rem;
+	float: left;
+
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.swith-city {
+	display: inline-block;
+}
+.swith-city em {
+	font-size: 1.5rem;
+	color: #222;
+	display: inline-block;
+	font-style: normal;
+	line-height: 1.8rem;
+}
+.swith-city i {
+	background: url("../img/jj.png");
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.top-middle{
+	background-size: 100%;
+	background: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 4rem;
+	height: 3rem;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+}
+.top-right {
+	float: right;
+	background: url("../img/p.png");
+	background-repeat: no-repeat;
+	width: 2rem;
+	height: 2rem;
+	margin-top: 0.2rem;
+}
+.bg {
+	position: relative;
+}
+.search-box{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	left: 1rem;
+	z-index: 3;
+	width: 92%;
+}
+.search-box input {
+    padding: 0 0.5rem;
+	height: 2.2rem;
+	border-radius: 0.1rem;
+	outline: none;
+	border-style: none;
+	width: 100%;
+}
+.swiper-container {
+	width: 100%;
+	height: 18rem;
+}
+
+.swiper-slide img {
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.look {
+	background: #fff;
+}
+.house {
+	padding: 2rem 0 0 0;
+}
+.house ul li {
+	margin-bottom: 2rem;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+.house ul li img {
+	width: 3.7rem;
+	height: 3.2rem;
+}
+.house ul li p {
+	color: #222;
+
+}
+.mod-box {
+	padding: 1rem 1rem 0 1rem;
+}
+.mod-box  h2 {
+	color: #9C9FA1;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	font-weight: normal;
+}
+
+.mod-box ul  {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+    padding-bottom: 2rem;
+	height: 6rem;
+}
+.mod-box ul li {
+	display: inline-block;
+	margin-right: 2rem;
+	position: relative;
+	width: 13rem;
+	height: 6rem;
+}
+.mod-box ul li img {
+	width: 100%;
+	height: 100%;
+}
+.mod-tip {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+    z-index: 2;
+	background-color:rgba(0,0,0,0.5);
+	color: #fff;
+	position: absolute;
+	top:0rem;
+}
+.mod-tip h3{
+	
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+}
+.house-list {
+	overflow: auto;
+	/*padding: 1rem;*/
+	background: #fff;
+	margin-top: 2rem;
+}
+ .tab>ul{
+ 	overflow: auto;
+	padding-left: 1rem;
+	background: #fff;
+ }
+.type  {
+	border-bottom: 1px solid #ddd;
+}
+.type>ul {
+	margin:0 1rem;
+	padding: 1rem 0;
+}
+.tab>ul>li {
+	line-height:3.5rem;
+	width: 25%;
+}
+.type>ul>li {
+	position: relative;
+	line-height: 3.5rem;
+	width: 25%;
+	float: left;
+}
+.type>ul>li>a, .tab>ul>li>a{
+	font-size: 1.8rem;
+	color: #9C9FA1;
+}
+.type>ul>li>i, .tab>ul>li>i {
+	display: inline-block;
+	position: relative;
+	top: 1rem;
+	background: url("../img/ss.png");
+	width: 2rem;
+	height: 2rem;
+	background-repeat: no-repeat;
+}
+.list {
+	padding: 1rem 1rem 0 1rem;
+}
+.list-img {
+	margin-right: 1rem;
+	float: left;
+	position: relative;
+   width: 8rem;
+   height: 8rem;
+}
+.list-img img {
+	width: 100%;
+	height: 100%;
+}
+.list-img span {
+	position: absolute;
+	top: 0;
+	width: 3rem;
+	height: 2rem;
+	background: #F5BD19;
+	font-size: 1.5rem;
+	color: #fff;
+	display: inline-block;text-align: center;
+}
+.list-img p {
+	position: absolute;
+	bottom:0;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	text-align: center;
+	line-height: 2.5rem;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.list-info {
+  margin-left: 9rem;
+}
+.info-title {
+	font-weight: normal;
+	font-size: 1.8rem;
+	color: #394043;
+}
+.eara {
+	margin-top: 0.5rem;
+	color: #8b8b8b;
+	font-size: 1.4rem;
+}
+.care {
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+}
+.price {
+	color: #fa5741;
+	font-weight: bold;
+}
+.size {
+	color: #9c9fa1;
+}
+.tip {
+
+	margin-top: 0.5rem;
+}
+.subway {
+	font-size: 1.4rem;
+	padding: 0.5rem;
+	background-color: rgba(89,171,253,0.15);
+	color: rgb(89,171,253);
+}
+.list ul li{
+	padding: 1rem 0;
+	border-bottom:1px solid #ddd;
+}
+.year {
+   font-size: 1.4rem;
+	padding: 0.5rem;
+	background-color: rgba(242,161,47,0.15);
+	color: rgb(242,161,47);
+}
+.look-house {
+	font-size: 1.4rem;
+	padding: 0.5rem;
+	background-color: rgba(51,190,133,0.15);
+	color: rgb(51,190,133);
+}
+.tab{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 5;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	overflow: auto;
+}
+.tab ul {
+	/*position: relative;*/
+	z-index: 100
+}
+.tab>ul>li {
+	float: left;
+}
+.tab-content {
+    position: absolute;
+    top: 3.5rem;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+	left: 0;
+	bottom: 0;
+}
+.tabtype{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+	height: 100%;
+	max-height: 26.5rem;
+	z-index: 100;
+	
+	background: #fff;
+}
+.nav {
+	overflow: auto;
+	background: #f0f0f0;
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+}
+.nav>ul>li {
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	color:#222;
+}
+.nav-list>ul>li, .nav-list>ul>li>ul>li {
+	font-size: 1.5rem;
+	border-bottom: 1px solid #f0f0f0;
+	padding:1rem 0 1rem 0;
+	margin-left: 1rem;
+}
+.nav-list {
+	overflow: auto;
+	/*margin-left: 50%;*/
+	width: 50%;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.white {
+	background: #fff;
+}
+.nav-list>ul>li>ul>li.black {
+	color: #222;
+}
+.nav-list>ul>li>ul>li.green {
+	color: #00ae66;
+}
+.grey{
+	background: #f0f0f0
+}
+.navprice li{
+	font-size: 1.6rem;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  border-bottom: 1px solid #f0f0f0
+}
+.navprice li .max, .navprice li .min{
+	margin-left: 0.5rem;
+	width: 2.1875rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    padding: 0 .125rem;
+    font-size: .6875rem;
+    border: 0;
+    background: #f5f5f5
+}
+.navprice li .btn{
+	display: inline-block;
+    width: 2.0625rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-left: .625rem;
+    padding: 0.1rem 0.5rem;
+    font-size: .625rem;
+    -webkit-border-radius: .125rem;
+    -moz-border-radius: .125rem;
+    border-radius: .125rem;
+        background-color: #00ae66;
+    color: #fff;
+}
+.navtype  li {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  border-bottom: 1px solid #f0f0f0
+}
+.navtype li input {
+	float: right;
+	border-style: none;
+	outline: none;
+	background: #fff;
+	width: 1.3rem;
+	height: 1.3rem;
+
+}
+.green-btn{
+	width: 100%;
+	color: #fff;
+	background: #00ae66;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.8rem;
+	position: fixed;
+	top: 27rem;
+	z-index: 9999;
+}
+.yes{
+	width: 100%;
+	color: #fff;
+	background: #00ae66;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.8rem;
+	/*position: fixed;
+	top: 27rem;*/
+	z-index: 9999;
+}
+.navmore {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.clear{
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.8rem;
+}
+.navyes{
+	width: 100%;
+	position: fixed;
+	top: 24rem;
+	z-index: 9999;
+}
+.navmore li {
+	padding: 2rem 1rem;
+	border-bottom: 1px solid #f0f0f0
+}
+.navmore li h2 {
+	/*margin-bottom: 1rem;*/
+	font-size: 1.5rem;
+}
+.navmore span{
+	display: inline-block;
+/*	width: 5rem;*/
+	height: 2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	border: 1px solid #f0f0f0;
+	padding: 0 0.5rem;
+	margin:1rem 1rem 1rem 0;
+}
+.fix{
+	position: fixed;
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 99;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+.tab>ul>li .green, .type>ul>li .green{
+	display: inline-block;
+	color: #00ae66;
+}
+.green{
+	color: #00ae66;
+}
+.selected{
+	color:#52c644;
+}
+.nav-list {
+	position: relative
+}
+.citylist {
+	position: absolute;
+	top: 0;
+	left:50%;
+}
+.nav.left{
+	width: 25%;
+
+}

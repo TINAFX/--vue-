@@ -1,0 +1,138 @@
+body,html,h2,ul,li,p,img,span,em ,h3{
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	font-size: 62.5%;
+}
+body {
+	background:#f5f5f5;
+}
+.clearfix::after{
+	clear: both;
+	display: block;
+	content: "";
+	height:0;
+}
+ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.top {
+	background: #fff;
+	padding: 1rem;
+}
+.top-left {
+	float: left;
+}
+.top-left a {
+	background: url("../img/hhe.png");
+	width: 3rem;
+	height: 2rem;
+	float: left;
+
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.swith-city {
+	display: inline-block;
+}
+.swith-city em {
+	font-size: 1.5rem;
+	color: #222;
+	display: inline-block;
+	font-style: normal;
+	line-height: 1.8rem;
+}
+.swith-city i {
+	background: url("../img/jj.png");
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.top-middle{
+	background-size: 100%;
+	background: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 4rem;
+	height: 3rem;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+}
+.top-right {
+	float: right;
+	background: url("../img/p.png");
+	background-repeat: no-repeat;
+	width: 2rem;
+	height: 2rem;
+	margin-top: 0.2rem;
+}
+.bg{
+	text-align: center;
+	background: url("../img/mine_head_bg_new.png") ;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 20rem;
+}
+.bg-img {
+    line-height: 20rem;
+    margin:0 auto;
+	width: 5rem;
+    height: 5rem;
+}
+.bg-img img{
+	width: 100%;
+	height: 100%
+}
+.bg p {
+	font-size: 1.5rem;
+	color: #fff;
+	line-height: 17rem;
+}
+.content {
+	padding: 0 1rem;
+	margin-top: 1rem;
+	background: #fff;
+
+}
+.content ul li {
+	font-size: 1.4rem;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 1rem;
+}
+.content ul li i{
+	margin-right: 1rem;
+	display: inline-block;
+	background: url("../img/list-icon.png");
+	width: 1rem;
+	height: 1rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.content ul .area i {
+	background-position: 0 -1rem;
+}
+.content ul .new i {
+	background-position: 0 -2rem;
+}
+.content ul .phone i {
+	background-position: 0 -4rem;
+}
+.exit {
+	margin: 2rem 1rem;
+	text-align: center;
+}
+.exit button {
+	width: 100%;
+	line-height: 3rem;
+	background: #fff;
+	outline: none;
+	border-style: none;
+	color: #394034;
+	font-size: 1.5rem;
+}
